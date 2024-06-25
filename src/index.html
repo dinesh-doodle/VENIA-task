@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Outerwear | ENIA</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="navbar-inner-wrapper">
+            <div class="logo">VENIA</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#smart-gear">Smart Gear</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <!-- <span class="cart-count">10</span> -->
+                <img src="./svg/cart.svg" alt="Cart" id="cart">
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="gender-type">Men's</h1>
+                <h1 class="clothing-type">Outerwear</h1>
+            </div>
+            <div class="hero-image">
+                <img src="./hero-image.png" alt="Men's Outerwear">
+            </div>
+        </section>
+
+        <section class="sorting-info-content">
+            <div class="breadcrumbs-content">
+                <ul class="breadcrumb">
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Men's</a></li>                    
+                    <li>Outerwear</li>
+                  </ul>
+            </div>
+            <div class="sorting-wrapper">
+                <div class="product-header">
+                    <input type="text" placeholder="Search here..." id="search-input" class="mobile-only" />
+                    <span id="result-count"></span>
+                </div>
+                <div class="sorting-content">
+                    <input type="text" placeholder="Search here..." id="search-input" class="desktop-only" />
+                    <div class="mobile-only">
+                        <button id="filter-btn">Filter Results</button>
+                    </div>
+                    <select class="sorting-button" id="sort-price">
+                        <option disabled>Sort By</option>
+                        <option value="asc">Price: Low to High</option>
+                        <option value="desc">Price: High to Low</option>
+                        <option value="prdasc">By Name: A-Z</option>
+                        <option value="prddesc">By Name: Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-listing-wrapper">
+            <div class="filter-content filters" id="filter-content">
+                <p class="filter-title">Filters</p>
+                <p class="category">Category</p>
+                <form id="filter-form">
+                    <label>
+                        <input type="checkbox" name="category" value="jewellery">
+                        Jewellery
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="electronics">
+                        Electronics
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="mens-clothing">
+                        Men's Clothing
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="womens-clothing">
+                        Women's Clothing
+                    </label>
+                </form>
+            </div>      
+            <div class="product-wrapper">
+                <div class="product-list" id="product-list">                          
+    
+                </div> 
+                <div class="load-more-wrapper">
+                    <button class="load-more" id="load-more">Load More</button>    
+                </div>
+            </div>
+        </section>
+         
+    </main>    
+
+    <footer>
+        <div class="about-footer-container">
+            <div class="info-container flex-row">
+                <h4 class="title">Account</h4>
+                <div class="about-list">
+                    <div>Sign In</div>
+                    <div>Register</div>
+                    <div>Order Status</div>
+                </div>
+            </div>
+            <div class="info-container flex-row">
+                <h4 class="title">About Us</h4>
+                <div class="about-list">
+                    <div>Our Story</div>
+                    <div>Career</div>
+                </div>
+            </div>
+            <div class="info-container flex-row">
+                <h4 class="title">Our Story</h4>
+                <div class="about-list">
+                    <div>Contact Us</div>
+                    <div>Order Status</div>
+                    <div>Returns</div>
+                </div>
+            </div>
+            <div class="info-container flex-row">
+                <h4 class="title">Follow</h4>
+                <div class="about-list">
+                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat nobis corrupti consectetur
+                        tenetur odio, magni dolorem tempore, amet similique ipsum temporibus ipsa, ad rem? Deserunt
+                        porro atque asperiores. Modi, debitis.</div>
+                    <div class="flex social-logo">
+                        <!-- <img src="assets/images/icons/facebook.svg" /> -->
+                        <!-- <img src="assets/images/icons/instagram.svg" /> -->
+                        <!-- <img src="assets/images/icons/twitter.svg" /> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-footer">
+            <div class="product-logo">
+                <div>VENIA</div>
+            </div>
+            <div>© Company Name Address Ave, City Name, State ZIP</div>
+            <div class="flex terms">
+                <div class="underline">Terms of Use</div>
+                <div class="underline">Private Policy</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
